@@ -14,7 +14,8 @@
 <li>Now I ran the program , and the error showed 'too many values to be unpacked' 
 <li>Then I understood we have to install another module named pyigl which cannot be installed by pip
 <li>So , next I researched and got to know that I have to create a conda virtual environment which had puthon 10.0 version
-<li>I installed all the modules again and finally the code got executed</li>
+<li>I installed all the modules again but the error continued</li>
+<li>The engine doesnt work on windows , so I had to do everything again on Ubuntu and fially it worked</li>
 
 <h2>Output:</h2>
 
