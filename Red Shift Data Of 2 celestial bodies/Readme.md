@@ -7,8 +7,8 @@ File used - star_classification.csv
 
 - Reads the dataset of 2 galaxies from .csv file
 - Removes negative and empty redshift values(we only consider moving away from us)
-- Calculates velocity using redshift and speed of light from astropy
-- Calculates luminous distance using Planck 18 model 
+- Calculates velocity using hubble parameter and comving distance from astropy library
+- Calculates comoving distance using Planck 18 model 
 - Compares both the data by creating a table
 
 Output:
