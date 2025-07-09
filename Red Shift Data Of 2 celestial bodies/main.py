@@ -9,7 +9,7 @@ g1=data.iloc[0]
 g2=data.iloc[1]
 
 def velocity_distance(z):
-    v=z*c.to('km/s').value
+    v=((1 + z)**2 - 1) / ((1 + z)**2 + 1)*c.to('km/s').value
     d=Planck18.luminosity_distance(z)
     return v,d
 
