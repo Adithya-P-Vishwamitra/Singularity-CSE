@@ -9,8 +9,9 @@ g1=data.iloc[0]
 g2=data.iloc[1]
 
 def velocity_distance(z):
-    v=((1 + z)**2 - 1) / ((1 + z)**2 + 1)*c.to('km/s').value
-    d=Planck18.luminosity_distance(z)
+    Hz = Planck18.H(z).to(u.km / u.s / u.Mpc)
+    d=Planck18.comoving_distance(z)
+    v=Hz*d.to(u.km / u.s)
     return v,d
 
 z1=g1['redshift']
